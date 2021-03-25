@@ -17,12 +17,12 @@ namespace Projetil
         Console.WriteLine("-- Projétil --");
         Console.WriteLine("---------------\n");
 
-        Console.Write("Entre com a velocidade, em m/s..: ");
+        Console.Write("Entre com a velocidade, (em m/s)..: ");
         velocidade = Convert.ToDouble(Console.ReadLine());
         
         Console.WriteLine();
 
-        Console.Write("Entre com o ângulo, em graus....: ");
+        Console.Write("Entre com o ângulo, (em graus)....: ");
         anguloGraus = Convert.ToDouble(Console.ReadLine());
         
         Console.WriteLine();
@@ -33,11 +33,11 @@ namespace Projetil
 
         altura = Math.Pow((velocidade * Math.Sin(anguloRadianos)), 2) / (2 * g);
 
-        Console.Write($"Alcance........: {alcance:N2}\n");
+        Console.Write($"Alcance........: {alcance:N2} m\n");
         
         Console.WriteLine();
         
-        Console.Write($"Altura máxima..: {altura:N2}");
+        Console.Write($"Altura máxima..: {altura:N2} m");
 
         }
     }
